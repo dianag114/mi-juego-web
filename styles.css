@@ -1,0 +1,111 @@
+/* Estilo del body y centrar contenido */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Fondo azul claro */
+}
+
+/* Fases de contenido con estilo de fondo azul y centrado */
+.phase {
+    display: none;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho para centrar */
+    background-color: rgba(135, 206, 235, 0.9); /* Fondo azul con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Centra el contenido dentro de la fase */
+}
+
+/* Contenedor de la imagen de introducción */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Imagen de fondo del título y ajuste de posición */
+#intro img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Título centrado sobre la imagen */
+.title {
+    font-size: 64px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+/* Ajuste de texto en instrucciones y créditos */
+.instructions-text p,
+.credits-text p {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Canvas del juego con fondo */
+#gameCanvas {
+    background-image: url('assets/background.jpg'); /* Fondo de juego */
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Estilo del puntaje centrado y destacado */
+#score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: rgba(0, 0, 139, 0.8); /* Fondo azul oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de los botones */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+
+/* Tamaño de los peces, cangrejos y estrellas en el juego */
+canvas {
+    display: block;
+    margin: 0 auto; /* Centra el canvas */
+}
+
+body {
+    cursor: url('assets/pointer.png') 16 16, auto; /* Puntero personalizado */
+}

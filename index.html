@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro" class="phase">
+        <img src="assets/sea.jpg" alt="Imagen del Mar">
+        <button onclick="showInstructions()">Iniciar Juego</button>
+    </div>
+
+    <div id="instructions" class="phase">
+        <h2>INSTRUCCIONES</h2>
+        <p>Haz clic en las figuras para eliminarlas y ganar puntos.</p>
+        <p>Evita que las figuras lleguen a la parte superior para continuar el juego.</p>
+        <button onclick="startGame()">Comenzar</button>
+    </div>
+
+    <div id="game" class="phase">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Puntos: 0</div>
+        <button onclick="endGame()">Salir del Juego</button>
+    </div>
+
+    <div id="credits" class="phase">
+        <h2>CRÉDITOS</h2>
+        <p>¡Gracias por jugar!</p>
+        <p>22200735 - Diana González R.</p>
+        <button onclick="showIntro()">Volver al Inicio</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
